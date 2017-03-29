@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nehvin.currencyconverter.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="21dp"
+        android:text="Enter USD Amt to Convert to INR" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="68dp"
+        android:ems="10"
+        android:hint="Enter Amt"
+        android:inputType="numberDecimal"
+        android:onClick="convert"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="34dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="389dp"
+        android:layout_height="136dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/currency"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="92dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="153dp" />
+
+    <Button
+        android:id="@+id/convert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="convert"
+        android:padding="15dp"
+        android:text="Convert"
+        android:layout_above="@+id/imageView"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
